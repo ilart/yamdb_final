@@ -5,9 +5,9 @@
 api для проекта yamdb. API позволяет создавать, удалять, получать и изменять записи в моделях. 
 Подробности можно узнать в [документации](http://51.250.65.218/redoc/ "How to use API YAMDB")".
 
-**Внимание, большинство операций трубуют аутентификацию пользователя.**
+**Внимание, большинство операций требуют аутентификацию пользователя.**
 
-### Как запустить проект:
+### Как запустить проект
 
 1. Клонировать репозиторий и перейти в него в командной строке:
 
@@ -39,8 +39,8 @@ sudo apt install docker.io
 
 4. Установите docker-compose, с этим вам поможет [официальная документация](https://docs.docker.com/compose/install/).
 
-5. Скопируйте файлы docker-compose.yaml и nginx/default.conf из вашего 
-проекта на сервер в home/<ваш_username>/docker-compose.yaml и home/<ваш_username>/nginx/default.conf соответственно.
+5. Скопируйте файлы docker-compose.yaml и ```nginx/default.conf``` из вашего 
+проекта на сервер в ```/home/<ваш_username>/docker-compose.yaml``` и ```/home/<ваш_username>/nginx/default.conf``` соответственно.
 
 6. Добавьте в Secrets GitHub Actions переменные окружения:
 - DOCKER_USERNAME 
