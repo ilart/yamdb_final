@@ -24,12 +24,11 @@ jobs:
       run: |
         python -m flake8
         pytest
-    - uses: hmarr/debug-action@v2
 
   build_and_push:
     runs-on: ubuntu-latest
     needs: smoke_test
-    if: github.ref == 'origin/master'
+    if: github.ref == 'refs/heads/master'
     steps:
     - name: check out
       uses: actions/checkout@v2
