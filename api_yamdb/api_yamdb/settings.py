@@ -11,7 +11,7 @@ SECRET_KEY = os.getenv("SECRET_KEY", default='secret_key')
 
 DEBUG = False
 
-ALLOWED_HOSTS = [os.getenv('SSH_HOST', default='127.0.0.1').split(' ')]
+ALLOWED_HOSTS = os.getenv('SSH_HOST', default='127.0.0.1').split()
 
 INSTALLED_APPS = [
     'users',
